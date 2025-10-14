@@ -1,3 +1,11 @@
+import torch
+import numpy as np
+import matplotlib.pyplot as plt
+import japanize_matplotlib
+
+README = "Hello!Haruki!"
+print(README)
+
 def eval_loss(loader,device,net,criterion):
 
     for images,labels in loader:

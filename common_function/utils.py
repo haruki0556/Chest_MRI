@@ -3,6 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import japanize_matplotlib
 
+from torch import tensor
+import torch.nn as nn
+import torch.optim as optim
+from torchviz import make_dot
+import torchvision.transforms as transforms
+from torch.utils.data import Dataset, DataLoader
+import torchvision.datasets as datasets
+from tqdm.notebook import tqdm
+
 README = "Hello!Haruki!"
 
 def eval_loss(loader,device,net,criterion):

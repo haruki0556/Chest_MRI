@@ -59,7 +59,7 @@ def fit(net,optimizer,criterion,num_epochs,train_loader,test_loader,device,histo
 
             predicted = torch.max(outputs,1)[1]
 
-            train_loss += loss.items() * train_batch_size
+            train_loss += loss.item() * train_batch_size
             n_train_acc += (predicted == labels).sum().item()
 
 
